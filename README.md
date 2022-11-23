@@ -18,8 +18,8 @@
 - **Giảng viên:**
 <ul>
       <ul>
-         <li> - PGS-TS. Lê Đình Duy - duyld@uit.edu.vn </li>
-         <li> - Ths. Phạm Nguyễn Trường An - truonganpn@uit.edu.vn </li>
+         <li> PGS-TS. Lê Đình Duy - duyld@uit.edu.vn </li>
+         <li> Ths. Phạm Nguyễn Trường An - truonganpn@uit.edu.vn </li>
       </ul>
 </ul>
 
@@ -35,15 +35,15 @@
        <th>MSSV</th>
        <th>Email</th>
       </tr>
+       <tr>
+       <td>Lê Tấn Lộc</td>
+       <td>20521546</td>
+       <td>20521546@gm.uit.edu.vn</td>  
+      </tr>
       <tr>
        <td>Nguyễn Hồng Anh Thư</td>
        <td>20520313</td>
        <td>20520313@gm.uit.edu.vn</td>  
-      </tr>
-      <tr>
-       <td>Lê Tấn Lộc</td>
-       <td>20521546</td>
-       <td>20521546@gm.uit.edu.vn</td>  
       </tr>
       <tr>
        <td>Bùi Quốc Thịnh</td>
