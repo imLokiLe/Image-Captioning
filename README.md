@@ -16,9 +16,10 @@
 - **Mã lớp:** CS114.N11.KHCL
 - **Năm học:** HK1 (2022-2023)
 - **Giảng viên:**
-<br></br>
-      - Ths. Phạm Nguyễn Trường An - truonganpn@uit.edu.vn
-      - PGS-TS. Lê Đình Duy - duyld@uit.edu.vn
+<ul>
+   <li> PGS-TS. Lê Đình Duy - duyld@uit.edu.vn </li>
+   <li> Ths. Phạm Nguyễn Trường An - truonganpn@uit.edu.vn </li>
+</ul>
 
 <h2>
    Giới thiệu nhóm
