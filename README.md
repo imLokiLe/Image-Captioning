@@ -41,14 +41,14 @@
        <td>20521546@gm.uit.edu.vn</td>  
       </tr>
       <tr>
-       <td>Nguyễn Hồng Anh Thư</td>
-       <td>20520313</td>
-       <td>20520313@gm.uit.edu.vn</td>  
-      </tr>
-      <tr>
        <td>Bùi Quốc Thịnh</td>
        <td>20520934</td>
        <td>20520934@gm.uit.edu.vn</td>  
+      </tr>
+      <tr>
+       <td>Nguyễn Hồng Anh Thư</td>
+       <td>20520313</td>
+       <td>20520313@gm.uit.edu.vn</td>  
       </tr>
 </table>
 
