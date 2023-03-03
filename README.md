@@ -57,8 +57,8 @@ Hiện nay, phương pháp tiếp cận giải quyết bài toán này là áp d
 * **Tên bộ dữ liệu:** UIT-ViIC + Flickr_sportballs
 * **Thống kê:**
 |  **Dataset**             |  **Train**                       |  **Test**                        |
-| :----------------------: |:--------------------------------:| :--------------------------------:
 |                          |  Ảnh         |  Caption          |   Ảnh         |  Caption         |
+| :----------------------: |:----------- :|  :--------------: | :-----------: |------------------:
 |  **UIT-ViIC**            |  3619        |  18101            |   231         |  1155            |
 |  **Flickr_sportballs**   |  100         |  500              |   100         |  500             |
 * **Cách thức xây dựng:**
@@ -111,5 +111,5 @@ Xây dựng mô hình Image Captioning với phần encoder sẽ dựa trên Eff
 |  **UIT-ViIC**                        |  0.6965          |   0.5647         |  0.4671          |  0.395           |  0.5821      |  1.0668       |
 |  **UIT – ViIC + Flickr_sportball**   |  0.6957          |   0.5562         |  0.4576          |  0.3863          |  0.5802      |  1.0703       |
 
-* Mô hình: [link](https://drive.google.com/file/d/193f3_fLwg-ya2XlnrqoV4_nBUwFq6XD2/view?usp=sharing)
+* Mô hình: [colab](https://drive.google.com/file/d/193f3_fLwg-ya2XlnrqoV4_nBUwFq6XD2/view?usp=sharing)
 * Báo cáo đồ án: [pdf](https://github.com/leetnlok/CS114/blob/main/Final_Project/report.pdf)
