@@ -44,8 +44,8 @@ Phát triển một hệ thống máy tính có thể hiểu được thế gi�
             
 Hiện nay, phương pháp tiếp cận giải quyết bài toán này là áp dụng khai thác đặc trưng ảnh qua CNN và sử dụng RNN để sinh câu mô tả. Tuy nhiên, phần lớn các nghiên cứu hiện tại chủ yếu tạo chú thích bằng tiếng Anh hoặc tiếng Trung cho ảnh. Trong đồ án này, chúng em tập trung giải quyết bài toán Image Captioning cho tiếng Việt – ngôn ngữ đang có gần 100 triệu người sử dụng. Chúng em sẽ kế thừa bộ dữ liệu UIT-ViIC - bộ dữ liệu đầu tiên cho bài toán Image Captioning cho tiếng Việt và xây dựng mở rộng thêm bộ dataset này theo phương pháp được đề xuất trong bài báo nghiên cứu. Hướng tiếp cận của chúng em cho bài toán trên sẽ sử dụng EfficientNetV2 để trích xuất đặc trưng ảnh và Transformer cho việc hình thành câu mô tả. Chúng em hy vọng kết quả đạt được sẽ tạo động lực cho các nghiên cứu sâu hơn về lĩnh vực Image Captioning trên tiếng Việt cũng như đa ngôn ngữ.
 
-* **Input:** Một tấm ảnh có chứa môn thể thao có bóng.
-* **Output:** Câu mô tả bằng Tiếng Việt cho bức ảnh.
+   * **Input:** Một tấm ảnh có chứa môn thể thao có bóng.
+   * **Output:** Câu mô tả bằng Tiếng Việt cho bức ảnh.
 * **Các ngữ cảnh ứng dụng:** 
    -	*Hỗ trợ người khiếm thị:* Image Captioning có thể giúp người khiếm thị hiểu được nội dung của các hình ảnh mà họ không thể nhìn thấy. Bằng cách sử dụng các phần mềm đọc mô tả văn bản cho hình ảnh, người khiếm thị có thể sử dụng điện thoại thông minh hoặc máy tính để xem và hiểu được nội dung của các hình ảnh.
    -	*Mạng xã hội:* Image Captioning cũng được sử dụng để tạo ra mô tả cho các bức ảnh trên các mạng xã hội như Instagram, Facebook, Twitter, v.v. Điều này giúp cho người dùng có thể tìm kiếm và hiểu được nội dung của các bức ảnh một cách dễ dàng hơn.
@@ -56,16 +56,23 @@ Hiện nay, phương pháp tiếp cận giải quyết bài toán này là áp d
 ## [MÔ TẢ BỘ DỮ LIỆU](#top)
 * **Tên bộ dữ liệu:** UIT-ViIC + Flickr_sportballs
 * **Thống kê:**
-|  **Dataset**             |  **Train**                       |  **Test**                        |
-|                          |  Ảnh         |  Caption          |   Ảnh         |  Caption         |
-| :----------------------: |:----------- :|  :--------------: | :-----------: |------------------:
-|  **UIT-ViIC**            |  3619        |  18101            |   231         |  1155            |
-|  **Flickr_sportballs**   |  100         |  500              |   100         |  500             |
+   * **UIT-ViIC**   
+|                          |  **Ảnh**                   |  **Caption**            |
+| :----------------------: |:-------------------------: | :-----------------------:
+|  **Train**               |  3619                      |  18101                  |
+|  **Test**                |   231                      |  1155                   |
+
+   * **Flickr_sportballs**
+|                          |  **Ảnh**                       |  **Caption**        |
+| :----------------------: |:-------------------------: | :-----------------------:
+|  **Train**               |  100                      |  500                  |
+|  **Test**                |   100                      |  500                   |
+
 * **Cách thức xây dựng:**
 
 Bộ dữ liệu UIT-ViIC là bộ dữ liệu được các chuyên gia thu thập từ MS COCO và sử dụng các quy luật annotation để label caption Tiếng Việt cho các hình ảnh.
 
-Bộ dữ liệu Flickr_sportballs là bộ dữ liệu do nhóm tự thu thập dựa trên bộ dữ liệu Flickr30k. Công việc cần làm là mỗi thành viên của nhóm sẽ gán nhãn caption Tiếng Việt cho các hình ảnh môn thể thao có bóng trong bộ dữ liệu Flickr30k dựa trên một số quy luật annotation nhất định. Để tạo nên bộ dữ liệu Flickr_sportballs, nhóm tiến hành theo các bước sau đây:
+Bộ dữ liệu Flickr_sportballs là bộ dữ liệu do nhóm tự thu thập gồm 200 ảnh và 1000 câu mô tả (5 câu mô tả cho mỗi ảnh) dựa trên bộ dữ liệu Flickr30k. Công việc cần làm là mỗi thành viên của nhóm sẽ gán nhãn caption Tiếng Việt cho các hình ảnh môn thể thao có bóng trong bộ dữ liệu Flickr30k dựa trên một số quy luật annotation nhất định. Để tạo nên bộ dữ liệu Flickr_sportballs, nhóm tiến hành theo các bước sau đây:
 
    -  Bước 1: Lọc hình ảnh môn thể thao có bóng trong bộ dữ liệu Flickr30k
    
