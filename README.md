@@ -104,9 +104,10 @@ Bộ dữ liệu Flickr_sportballs là bộ dữ liệu do nhóm tự thu thập
 
 ## [MÔ TẢ THUẬT TOÁN](#top)
 
-Xây dựng mô hình Image Captioning với phần encoder sẽ dựa trên EfficientNetV2 (phương pháp do Mingxing Tan, Quoc V. Le công bố năm 2021) để trích xuất đặc trưng ảnh và phần decoder sẽ sử dụng Transformer (phương pháp do Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin công bố năm 2017) để sinh ra câu mô tả cho ảnh.
+Xây dựng mô hình Image Captioning với phần encoder sẽ dựa trên *EfficientNetV2* (phương pháp do Mingxing Tan, Quoc V. Le công bố năm 2021) để trích xuất đặc trưng ảnh và phần decoder sẽ sử dụng *Transformer* (phương pháp do Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin công bố năm 2017) để sinh ra câu mô tả cho ảnh.
 
 **Pipeline**
+
 ![image](https://github.com/leetnlok/CS114/blob/main/Final_Project/pipeline.png)
 
 ## [ĐÁNH GIÁ](#top)
