@@ -57,13 +57,13 @@ Hiện nay, phương pháp tiếp cận giải quyết bài toán này là áp d
 * **Tên bộ dữ liệu:** UIT-ViIC + Flickr_sportballs
 * **Thống kê:**
    * **UIT-ViIC**   
-|                          |  **Ảnh**                   |  **Caption**            |
+| **Dataset**              |  **Ảnh**                   |  **Caption**            |
 | :----------------------: |:-------------------------: | :-----------------------:
 |  **Train**               |  3619                      |  18101                  |
 |  **Test**                |   231                      |  1155                   |
 
    * **Flickr_sportballs**
-|                          |  **Ảnh**                       |  **Caption**        |
+| **Dataset**              |  **Ảnh**                   |  **Caption**            |
 | :----------------------: |:-------------------------: | :-----------------------:
 |  **Train**               |  100                      |  500                  |
 |  **Test**                |   100                      |  500                   |
