@@ -56,17 +56,19 @@ Hiện nay, phương pháp tiếp cận giải quyết bài toán này là áp d
 ## [MÔ TẢ BỘ DỮ LIỆU](#top)
 * **Tên bộ dữ liệu:** UIT-ViIC + Flickr_sportballs
 * **Thống kê:**
-   * **UIT-ViIC**   
+   * **UIT-ViIC** 
+  
 | **Dataset**              |  **Ảnh**                   |  **Caption**            |
 | :----------------------: |:-------------------------: | :-----------------------:
 |  **Train**               |  3619                      |  18101                  |
 |  **Test**                |   231                      |  1155                   |
 
    * **Flickr_sportballs**
+  
 | **Dataset**              |  **Ảnh**                   |  **Caption**            |
 | :----------------------: |:-------------------------: | :-----------------------:
-|  **Train**               |  100                      |  500                  |
-|  **Test**                |   100                      |  500                   |
+|  **Train**               |  100                       |  500                    |
+|  **Test**                |   100                      |  500                    |
 
 * **Cách thức xây dựng:**
 
